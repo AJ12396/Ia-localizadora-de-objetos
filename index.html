@@ -1,37 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
+
+
+<html>
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ia localizadora de objetos</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+
+
+
+
+	<title>IA Localizadora de Objetos</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+
+<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
 </head>
+
+
+
+
+
+
 <body background="background.jpg">
-    <div class="container_externo">
-        <h1 class="btn btn-info heading">Ia localizadora de objetos
-            <br>
-            <span>O nome de entrada que você fornecer devera ser o mesmo presente no modelo cocoSSD, apenas assim o objeto será detectado
-                <br>
-                Portanto, visto que o modelo coco, apresenta todos os seus objetos em ingles, você devera escrever o nome do objeto desejado em
-                <br>
-                ingles, pois ele não realizara a identificação caso utilize o nome de um objeto em português
-            </span>
-        </h1>
-        <br><br>
-        <div class="form-group" style="width: 30%;">
-            <label>Nome do objeto (em ingles):</label>
-            <input type="text" class="form-control" id="objectName">
-            <button onclick="start()" id="startModel" class="btn btn-danger">Iniciar</button>
-        </div>
-        <h3 class="btn btn-danger" id="status"></h3>
-        <h3 class="btn btn-warning" id="objectStatus"></h3>
-    </div>
-    <script src="main.js"></script>
+
+
+<center>
+
+
+<h1 class="btn btn-info heading">IA Localizadora de Objetos
+
+
+<br>
+
+
+<span style="color:black;font-size: 13px;">O nome de entrada que você fornecer deverá ser o mesmo presente no modelo CoCo, apenas assim o objeto será detectado.
+
+
+<br>
+
+
+Portanto, visto que o modelo CoCo apresenta todos os seus objetos em inglês, você deverá escrever o nome do objeto desejado também em inglês, pois ele não realizará a identificação caso utilize o nome de um objeto em português.</span>
+
+
+</h1>
+
+
+
+
+
+
+<br><br>
+
+
+
+
+
+
+<div class="form-group" style="width: 30%;">
+
+
+<label>Nome do Objeto (em inglês):</label>
+
+
+<input type="text" class="form-control" id="objectName">
+
+
+<br><br>
+
+
+<button onclick="start()" class="btn btn-success">Iniciar</button>
+
+
+</div>
+
+
+
+
+
+
+<h3 id="status" class="btn btn-danger"></h3>
+
+
+<h3 id="objectStatus" class="btn btn-warning"></h3>
+
+
+</center>
+
+
+
+
+
+
+<script src="main.js"></script>
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
 </html>
+
+
+
+
+
+
